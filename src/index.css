@@ -12,3 +12,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#root {
+  min-height: 100vh;
+}
+
+
+header {
+  width: 100vw;
+  max-height: 100px;
+  background: lightgrey;
+  margin-bottom: 15px;
+}
+
+footer {
+  height: 100px;
+  width: 100vw;
+  color: red;
+  background: lightgrey;
+  bottom: 0;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 2px 5px;
+}
