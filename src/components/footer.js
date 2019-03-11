@@ -4,7 +4,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer>
-      Im the footer bro use some links
+        <p>Im the footer bro use some links</p>
       </footer>
     )
   }

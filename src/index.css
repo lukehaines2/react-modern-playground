@@ -38,7 +38,7 @@ footer {
 header {
   height: 10vmin;
   max-height: 100px;
-  margin-bottom: 15px;
+  padding: 0 15px;
   position: sticky;
   top: 0;
   z-index: 10;

@@ -13,6 +13,7 @@ export default class JobSpecDetails extends React.Component {
     /* Tried adding an ErrorBoundary for jobDetails component when job was undefined,
        but it didnt render behind the callsatck in dev env,
        so I think something is missing in the ErrorBounary component :(
+       https://github.com/facebook/create-react-app/issues/3627
     */
     return (
       <div className="jobSpecContainer">
