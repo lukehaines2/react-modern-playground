@@ -30,7 +30,6 @@ a:hover, a:focus, a:active, a:visited {
 footer {
   height: 100px;
   width: 100vw;
-  color: red;
   background: lightgrey;
   bottom: 0;
   position: absolute;
@@ -64,4 +63,11 @@ ul {
 
 li {
   padding: 2px 5px;
+}
+
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

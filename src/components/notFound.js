@@ -9,7 +9,7 @@ export default ({history, location}) => {
   };
 
   return (
-    <div>
+    <div className="notFoundContainer">
       <h1>LOL 404 not found!</h1>
       <p>We couldn't find a page matching the url <code>{location.pathname}</code>!</p>
       <button onClick={back}>Try goin back m8</button>
