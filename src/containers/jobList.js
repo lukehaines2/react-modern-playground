@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default class JobList extends React.Component {
+export default class JobListContainer extends React.Component {
   render() {
     return (
       <div>

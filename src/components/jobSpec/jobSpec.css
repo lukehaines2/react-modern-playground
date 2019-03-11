@@ -1,0 +1,18 @@
+.jobSpecContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobSpecInner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jobSpecInner section {
+  width: 30vw;
+  padding: 25px;
+}

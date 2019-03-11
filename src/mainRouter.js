@@ -11,6 +11,11 @@ const JobList = lazy(() => import("./containers/jobList"));
 const JobSpec = lazy(() => import("./containers/jobSpec"));
 const NotFound = lazy(() => import("./components/notFound"));
 
+// NOTE! React.lazy makes Route's proptypes fail :(
+// https://github.com/ReactTraining/react-router/issues/6420
+// I have fixed by using "react-router-dom": "^4.4.0-beta.6"
+// Would be good to update to next stable release of react-router-dom and stop using beta when possible!
+
 export default () => {
   return (
     <Router>
@@ -22,7 +27,9 @@ export default () => {
               <Route path="/" exact component={Home} />
               <Route path="/jobs/" exact component={JobList} />
               <Route path="/job-spec/" exact component={JobSpec} />
-              <Redirect from="/jbos/:id" to="/job-spec/:id"/>
+              <Route path="/job-spec/:id" exact component={JobSpec} />
+              <Redirect from="/job-spec-redirect/" to="/jobs/"/>
+              <Redirect from="/jobs/:id" to="/job-spec/:id"/>
               <Route component={NotFound} />
             </Switch>
           </Suspense>
