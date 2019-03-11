@@ -1,8 +1,8 @@
 import React from "react";
 
 export default ({history, location}) => {
-  // This is not the ideal way to bind apparently!
-  // But it's a 404 page with no children soooo ;)
+  // This is a new way to bind but not 100% the ideal way for huge apps apparently!
+  // But it's a 404 page with no children soooo..
   const back = e => {
     e.stopPropagation();
     history.goBack();
