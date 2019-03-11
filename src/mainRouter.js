@@ -1,20 +1,22 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import ErrorBoundary from "./components/errorBoundary";
 
+import ErrorBoundary from "./components/errorBoundary";
+import LoadingSpinner from "./components/loadingSpinner";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import LoadingSpinner from "./components/loadingSpinner";
 
 const Home = lazy(() => import("./containers/home"));
 const JobList = lazy(() => import("./containers/jobList"));
 const JobSpec = lazy(() => import("./containers/jobSpec"));
 const NotFound = lazy(() => import("./components/notFound"));
 
-// NOTE! React.lazy makes Route's proptypes fail :(
-// https://github.com/ReactTraining/react-router/issues/6420
-// I have fixed by using "react-router-dom": "^4.4.0-beta.6"
-// Would be good to update to next stable release of react-router-dom and stop using beta when possible!
+/*
+  NOTE! React.lazy makes Route's proptypes fail :(
+  https://github.com/ReactTraining/react-router/issues/6420
+  I have fixed for now by using "react-router-dom": "^4.4.0-beta.6"
+  Would be good to update to next stable release of react-router-dom and stop using beta when possible!
+*/
 
 export default () => {
   return (
