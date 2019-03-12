@@ -18,6 +18,9 @@ export default class Header extends React.Component {
             <li>
               <Link to="/job-spec">Job Spec</Link>
             </li>
+            <li>
+              <a href="https://adludio.com" target="_blank" rel="noopener noreferrer">external adludio</a>
+            </li>
           </ul>
         </nav>
       </header>

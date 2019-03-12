@@ -22,11 +22,13 @@ export default class ErrorBoundary extends React.Component {
       return (
         <div>
           <h1>Uh ohhhh! Something went wrong.</h1>
+          {/*
           <details style={{ whiteSpace: 'pre-wrap' }}>
             {this.state.error && this.state.error.toString()}
             <br />
             {this.state.errorInfo.componentStack}
           </details>
+          */}
         </div>
       )
     }
